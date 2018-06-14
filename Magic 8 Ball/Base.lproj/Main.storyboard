@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="628-D8-mAL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="far-zt-PcE">
+                                        <rect key="frame" x="109" y="488" width="157" height="47"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <state key="normal" title="Get Answer">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOp-Ib-PKx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLy-QX-jwh">
+                                        <rect key="frame" x="62" y="208" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="1qm-QC-Dgl"/>
+                                            <constraint firstAttribute="width" constant="250" id="50n-E0-zAT"/>
+                                        </constraints>
+                                        <state key="normal" title="ImageButton"/>
+                                        <connections>
+                                            <action selector="ImageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIE-vx-2HQ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="uL2-jb-ZmQ">
+                                        <rect key="frame" x="62" y="208" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="n89-OU-1CY"/>
+                                            <constraint firstAttribute="width" constant="250" id="uid-ov-p8K"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1O-Gt-UnV">
+                                        <rect key="frame" x="19" y="117" width="336" height="47"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.66666666666666663" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="far-zt-PcE" firstAttribute="top" secondItem="uL2-jb-ZmQ" secondAttribute="bottom" constant="30" id="3kc-ha-ncf"/>
+                                    <constraint firstItem="uL2-jb-ZmQ" firstAttribute="centerX" secondItem="628-D8-mAL" secondAttribute="centerX" id="UOt-UT-kXX"/>
+                                    <constraint firstItem="uL2-jb-ZmQ" firstAttribute="top" secondItem="f1O-Gt-UnV" secondAttribute="bottom" constant="44" id="VsR-kD-qPO"/>
+                                    <constraint firstItem="f1O-Gt-UnV" firstAttribute="centerX" secondItem="628-D8-mAL" secondAttribute="centerX" id="e8H-S2-cu8"/>
+                                    <constraint firstItem="far-zt-PcE" firstAttribute="centerX" secondItem="628-D8-mAL" secondAttribute="centerX" id="iZh-Xw-px9"/>
+                                    <constraint firstItem="YLy-QX-jwh" firstAttribute="centerY" secondItem="628-D8-mAL" secondAttribute="centerY" id="vkL-oE-nC0"/>
+                                    <constraint firstItem="YLy-QX-jwh" firstAttribute="centerX" secondItem="628-D8-mAL" secondAttribute="centerX" id="x40-rD-Wlu"/>
+                                    <constraint firstItem="uL2-jb-ZmQ" firstAttribute="centerY" secondItem="628-D8-mAL" secondAttribute="centerY" id="yy8-kq-eVE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="628-D8-mAL" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="C8t-pm-s7c"/>
+                            <constraint firstItem="628-D8-mAL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Spd-dD-Dx1"/>
+                            <constraint firstItem="628-D8-mAL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fIB-Ug-won"/>
+                            <constraint firstItem="628-D8-mAL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vuQ-EK-K2F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ballImageView" destination="uL2-jb-ZmQ" id="IpJ-B1-5Wh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball1" width="460" height="412"/>
+    </resources>
+</document>
